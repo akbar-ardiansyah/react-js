@@ -1,0 +1,31 @@
+.card {
+    color: rgb(49, 48, 48);
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.194);
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+}
+
+.desc {
+    font-size: 14px;
+    width: 280px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wrapper {
+    display: inline-block;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    align-items: center;
+}
+
+.images {
+    height: 200px;
+    width: 280px;
+    object-fit: cover;
+}
