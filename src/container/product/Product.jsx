@@ -5,7 +5,7 @@ import './Product.css';
 
 class Product extends Component{
     state = {
-    order:12
+    order:10
     }
     render(){
         return(
@@ -38,6 +38,7 @@ class Product extends Component{
                 desc="deserunt voluptatibus beatae voluptas distinctio, quo nisi eius maiores fugit dignissimos quas recusandae. Consectetur!"
                 price="400"
                 />
+
                 </section>
             </Fragment>
         );

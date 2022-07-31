@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
 body {
     padding: 0 !important;
     margin: 0 !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content-wrapper {
@@ -14,6 +17,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        margin: 0 30px;
+    }
 }
 
 
