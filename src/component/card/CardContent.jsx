@@ -5,9 +5,18 @@ const CardContent = (props) => {
     return (
     <div className="wrapper">
         <div className="card">
-            <div className="title">{props.title}</div>
             <img src={props.dataImg} alt={props.dataImg} className="images" />
+            <div className="title">
+                <div className="name">{props.title}</div>
+                <div className="price">$ {props.price}</div>
+            </div>
             <div className="desc">{props.desc}</div>
+            <div className="button">
+                <button>add to cart</button>
+                <div className="form">
+                <input type="number" />
+                </div>
+            </div>
         </div>
     </div>
     );
@@ -17,7 +26,8 @@ const CardContent = (props) => {
 CardContent.defaultProps = {
     title: "title",
     dataImg: "https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg",
-    desc: " "
+    desc: " ",
+    price: " 0"
 }
 
 export default CardContent;

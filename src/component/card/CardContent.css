@@ -1,7 +1,7 @@
 .card {
     color: rgb(49, 48, 48);
-    border-radius: 12px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.194);
+    border-radius: 6px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.194);
     padding: 10px;
     width: fit-content;
     margin: 10px;
@@ -15,6 +15,42 @@
 .title {
     font-size: 18px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #232323;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: fit-content;
+}
+
+.form input {
+    width: 40px;
+    padding: 8px;
+    border-radius: 5px;
+    outline-style: dashed;
+    border: none;
+    outline-color: #dbdbdb;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #979797;
 }
 
 .wrapper {
