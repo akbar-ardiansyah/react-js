@@ -1,0 +1,64 @@
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.content-wrapper {
+    width: 100%;
+    background-color: #e8e5e5;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.troley {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e8e5e5;
+}
+
+.counter {
+    background: rgb(255, 1, 1);
+    font-size: 13px;
+    padding: 3px;
+    border-radius: 100px;
+    min-width: 15px;
+    text-align: center;
+    position: relative;
+    right: -20px;
+    top: -10px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    width: 29px;
+    margin: 8px;
+}
+
+.icon {
+    background-image: url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png);
+    /* content: ""; */
+    background-size: contain;
+    height: 29px;
+    width: 29px;
+    background-repeat: no-repeat;
+}
+
+section.content {
+    display: inline-block;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    align-items: center;
+    margin: 30px 0 120px 120px;
+    width: auto;
+}
