@@ -10,14 +10,16 @@
 .desc {
     font-size: 14px;
     width: 280px;
+    font-weight: 100;
 }
 
 .title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: medium;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-transform: capitalize;
 }
 
 .button {
@@ -38,6 +40,12 @@ button {
     width: fit-content;
 }
 
+.min,
+.max {
+    min-width: 30px;
+    margin: 0 8px;
+}
+
 .form input {
     width: 40px;
     padding: 8px;
@@ -45,11 +53,12 @@ button {
     outline-style: dashed;
     border: none;
     outline-color: #dbdbdb;
+    text-align: center;
 }
 
 .price {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: Light;
     color: #979797;
 }
 
