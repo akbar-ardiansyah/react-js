@@ -19,7 +19,7 @@ const CardContent = (props) => {
                 <div className="price">$ {props.price}</div>
             </div>
             <div className="desc">{props.desc}</div>
-            <Counter  />
+            <Counter/>
         </div>
     </div>
     );
