@@ -9,9 +9,9 @@ class main extends Component {
     render() {
         return (
             <div>
-                {/* <Product /> */}
-                <Product/>
-                <LifeCycleComp/>
+                <Product />
+                {/* <LifeCycleComp/> */}
+                {/* <react/> */}
             </div>
         );
     }
