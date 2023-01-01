@@ -1,0 +1,11 @@
+.h-50 {
+    max-height: 50vh !important;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-indicators button {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+}
