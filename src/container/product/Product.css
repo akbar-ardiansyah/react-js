@@ -15,6 +15,7 @@ body {
 .header {
     margin: 0 120px;
     display: flex;
+    padding: 3px 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -35,10 +36,11 @@ body {
 }
 
 .counter {
-    background: rgb(255, 1, 1);
-    font-size: 13px;
+    background: rgba(246, 4, 4, 0.685);
+    backdrop-filter: blur(3px);
+    font-size: 7px;
     padding: 3px;
-    border-radius: 100px;
+    border-radius: 50px;
     min-width: 15px;
     text-align: center;
     position: relative;
@@ -50,7 +52,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
-    width: 29px;
+    width: 20px;
     margin: 8px;
 }
 
@@ -58,16 +60,16 @@ body {
     background-image: url(https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png);
     /* content: ""; */
     background-size: contain;
-    height: 29px;
-    width: 29px;
+    height: 23px;
+    width: 23px;
     background-repeat: no-repeat;
 }
 
-section.content {
+/* section.content {
     display: inline-block;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
     align-items: center;
     margin: 30px 0 120px 120px;
     width: auto;
-}
+} */
