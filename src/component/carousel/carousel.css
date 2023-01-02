@@ -1,11 +1,33 @@
 .h-50 {
     max-height: 50vh !important;
     object-fit: cover;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+}
+
+.carousel-indicators {
+    margin-left: 3% !important;
+    justify-content: start !important;
 }
 
 .carousel-indicators button {
-    width: 15px !important;
-    height: 15px !important;
+    width: 8px !important;
+    height: 8px !important;
     border-radius: 50%;
 }
+
+.carousel-inner {
+    border-radius: 8px !important;
+
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 4% !important;
+    /* background: rgb(255, 255, 255); */
+    /* border-radius: 50px; */
+    /* height: 20px; */
+    /* width: 20px !important; */
+}
+
+/* .carousel-item img {
+} */
