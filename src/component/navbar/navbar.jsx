@@ -8,7 +8,7 @@ const navbar = (props) => {
         <div className="container-fluid bg-body-secondary">
             <div className="ps-4 pt-1 pb-1 fs-6 fw-light">
                 <small>
-                   Download Tokopedia App
+                <i className="bi-phone"></i> Download Tokopedia App
                 </small>
             </div>
         </div>
@@ -18,7 +18,7 @@ const navbar = (props) => {
                         <img src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg" alt="" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
                 <div className="collapse navbar-collapse pe-4" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
@@ -37,12 +37,15 @@ const navbar = (props) => {
                         </li>
                        <li className="nav-item">
                             <form className="nav-link">
-                                <input className="form-control" type="search" placeholder="Cari di tokopedia" aria-label="Search"/>
+                                <div class="input-group search">
+                                    <input className="form-control" type="search" placeholder="Cari di tokopedia" aria-describedby="basic-addon2" aria-label="Search"/>
+                                    <span class="input-group-text" id="basic-addon2"><i className="bi-search"></i></span>
+                                </div>
                             </form>
                        </li>
                     </ul>
-                        <button className="btn btn-outline-success" type="submit">Masuk</button>
-                        <button className="btn btn-success" type="submit">Daftar</button>
+                        <button className="btn btn-outline-success btn-sm" type="submit">Masuk</button>
+                        <button className="btn btn-success btn-sm" type="submit">Daftar</button>
                 </div>
             </div>
         </nav>

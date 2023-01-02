@@ -1,5 +1,6 @@
 import React,{Component, Fragment} from "react";
 
+import CardPartial from "../../component/card/CardPartial";
 import CardContent from "../../component/card/CardContent";
 import Carousel from "../../component/carousel/carousel";
 import Navbar from "../../component/navbar/navbar";
@@ -28,6 +29,7 @@ class Product extends Component{
                     carouselImage1="https://images.tokopedia.net/img/NsjrJu/2020/9/25/ea701ee6-f36b-473d-b429-4d2a1da0713d.jpg?ect=4g"
                     carouselImage2="https://images.tokopedia.net/img/cache/1208/NsjrJu/2022/12/17/e6cee2d4-db9d-4bcd-9bb1-7e3689230c27.jpg.webp?ect=4g"
                     />
+                    <CardPartial/>
                 {/* <CardContent 
                 title="title 1" 
                 dataImg="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" 
