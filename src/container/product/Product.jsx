@@ -7,22 +7,16 @@ import Navbar from "../../component/navbar/navbar";
 import './Product.css';
 
 class Product extends Component{
-    state = {
-    order:10
+    state ={
+        orders: 123
     }
     render(){
         return(
             <Fragment>
-                <Navbar/>
-                {/* <div className="content-wrapper">
-                    <div className="header">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png" alt="" className="logo" />
-                        <div className="troley">
-                            <div className="counter">{this.state.order}</div>
-                            <div className="icon"></div>
-                        </div>
-                    </div>
-                </div> */}
+                <Navbar
+                order={this.state.orders}
+                logo="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg"
+                />
                 <section className="container mt-6">
                 <Carousel 
                     carouselImages="https://images.tokopedia.net/img/home/defaultbanner/59e9ecd0-b91b-40d4-aef8-b1057be0_auto_x2.jpg?ect=4g"
