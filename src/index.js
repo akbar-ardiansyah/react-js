@@ -5,14 +5,26 @@ import Main from './container/main/main';
 import reportWebVitals from './reportWebVitals';
 
 
-// disini adalah tempat dimana koomponen yang telah kita buat di render
+// disini adalah tempat dimana komponen yang telah kita buat di render
 // ada dua macam komponen yaitu statefullComponent dan statlessComponent
 // berikut adalah contoh koponen default yang telah di buat sejak pertama kali di create projects
+
+// ini adalah contoh  stafullcomponent
+const stateLessComponent = () => {
+  return <h1>Hello World</h1>
+}
+// dan ini contooh stateFullComponent
+class stateFullComponent extends React.Component {
+  render() {
+    return <p>Hello world!</p>
+  }
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Main />
+    {/* <Main /> */}
+    <stateFullComponent />
   </React.StrictMode>
 );
 
