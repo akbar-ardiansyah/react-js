@@ -22,3 +22,17 @@
 button {
     margin: 0 3px;
 }
+
+.counter {
+    position: absolute;
+    background: rgba(246, 4, 4, 0.685);
+    backdrop-filter: blur(3px);
+    font-size: 7px;
+    padding: 3px;
+    border-radius: 50px;
+    min-width: 15px;
+    text-align: center;
+    left: 8px;
+    top: 0;
+    color: #ffffff;
+}
