@@ -20,6 +20,12 @@
 
 }
 
+/* .carousel-control-next,
+.carousel-control-prev {
+    display: none;
+} */
+
+
 .carousel-control-next,
 .carousel-control-prev {
     width: 4% !important;

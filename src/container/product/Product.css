@@ -36,19 +36,6 @@ body {
     color: #e8e5e5;
 }
 
-.counter {
-    background: rgba(246, 4, 4, 0.685);
-    backdrop-filter: blur(3px);
-    font-size: 7px;
-    padding: 3px;
-    border-radius: 50px;
-    min-width: 15px;
-    text-align: center;
-    position: relative;
-    right: -20px;
-    top: -10px;
-}
-
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
