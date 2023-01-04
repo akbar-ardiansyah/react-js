@@ -15,7 +15,7 @@ const navbar = (props) => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                     <a className="navbar-brand ps-4" href="#">
-                        <img src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg" alt="" />
+                        <img src={props.logo} alt={props.logo} />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -44,6 +44,12 @@ const navbar = (props) => {
                             </form>
                        </li>
                     </ul>
+                       <div className="position-relative nav-item me-3">
+                            <div className="nav-link text-secondary">
+                                <i className="bi-bag-fill"></i>
+                                <div className="counter">{props.order}</div>
+                            </div>
+                       </div>
                         <button className="btn btn-outline-success btn-sm" type="submit">Masuk</button>
                         <button className="btn btn-success btn-sm" type="submit">Daftar</button>
                 </div>
@@ -52,5 +58,8 @@ const navbar = (props) => {
     </div>
     );
 }
-
+navbar.defaultProps ={
+    order : 0,
+    logo : "%PUBLIC_URL%/logo192.png"
+}
 export default navbar;
