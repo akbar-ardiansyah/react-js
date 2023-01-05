@@ -1,60 +1,16 @@
 import React from "react";
-import './card.css';
+import './CardPartial.css';
 
 const CardPartial = (props)=>{
 return(
-    <div className="card">
+    <div className="card m-0 mt-4">
         <div className="row">
             <div className="col" >
                 <div className="card-title h3">{props.cardTitle1}</div>
                     <div id="carouselExample" className="carousel slide">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <ul className="d-flex">
-                                    <li>
-                                        <a href="#">
-                                            <div className="card">
-                                                <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
-                                                <div className="card-body">
-                                                    <h5 className="card-title">Card title</h5>
-                                                </div>
-                                            </div>
-                                            </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div className="card">
-                                                <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
-                                                <div className="card-body">
-                                                    <h5 className="card-title">Card title</h5>
-                                                </div>
-                                            </div>
-                                            </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div className="card">
-                                                <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
-                                                <div className="card-body">
-                                                    <h5 className="card-title">Card title</h5>
-                                                </div>
-                                            </div>
-                                            </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div className="card">
-                                                <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
-                                                <div className="card-body">
-                                                    <h5 className="card-title">Card title</h5>
-                                                </div>
-                                            </div>
-                                            </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="carousel-item">
-                                <ul className="d-flex">
+                            <ul className="d-flex p-0">
                                         <li>
                                             <a href="#">
                                                 <div className="card">
@@ -98,7 +54,51 @@ return(
                                 </ul>
                             </div>
                             <div className="carousel-item">
-                                <ul className="d-flex">
+                                <ul className="d-flex  p-0">
+                                        <li>
+                                            <a href="#">
+                                                <div className="card">
+                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">Card title</h5>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div className="card">
+                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">Card title</h5>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div className="card">
+                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">Card title</h5>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div className="card">
+                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">Card title</h5>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div className="carousel-item">
+                                <ul className="d-flex  p-0">
                                         <li>
                                             <a href="#">
                                                 <div className="card">
