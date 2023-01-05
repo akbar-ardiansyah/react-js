@@ -11,14 +11,14 @@ const CardContent = (props) => {
     //     this.setState({order:newValue})
     // }
     return (
-    <div className="wrapper">
+    <div className="col-lg-3">
         <div className="card">
             <img src={props.dataImg} alt={props.dataImg} className="images" />
             <div className="title">
                 <div className="name">{props.title}</div>
                 <div className="price">$ {props.price}</div>
             </div>
-            <div className="desc">{props.desc}</div>
+            <div className="desc">{props.desc.length < 80? props.desc.substring(0, 80):props.desc.substring(0, 80)+" ..."}</div>
             <Counter/>
         </div>
     </div>
