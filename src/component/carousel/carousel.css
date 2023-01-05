@@ -29,10 +29,15 @@
 .carousel-control-next,
 .carousel-control-prev {
     width: 4% !important;
-    /* background: rgb(255, 255, 255); */
-    /* border-radius: 50px; */
-    /* height: 20px; */
-    /* width: 20px !important; */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background: #ffff;
+    color: rgb(64, 64, 64);
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 1px 1px 13px rgba(17, 17, 17, 0.365);
 }
 
 /* .carousel-item img {
