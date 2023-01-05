@@ -1,0 +1,41 @@
+.carousel-item .card .card-title {
+    text-decoration: none;
+}
+
+.carousel-item .card {
+    padding: 0;
+    margin: 0 15px;
+    text-align: center;
+    border: solid 0.1px rgb(240, 239, 239);
+}
+
+.carousel-item .card-title {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.carousel-item .card {
+    width: 8rem;
+    height: 8rem;
+    font-weight: normal;
+    box-shadow: none;
+}
+
+.carousel-item li {
+    list-style: none;
+}
+
+.carousel-item .card img {
+    margin: auto;
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.card .carousel-control-next-icon,
+.card .carousel-control-prev-icon {
+    background: rgb(255, 255, 255);
+    color: rgb(64, 64, 64);
+    border-radius: 50%;
+    font-size: 20px;
+}
