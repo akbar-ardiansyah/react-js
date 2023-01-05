@@ -10,6 +10,12 @@ class Product extends Component{
     state ={
         orders:0
     }
+    // state kiriman dari props cardContent
+    addToCart=(newValue)=>{
+        this.setState({
+            orders: newValue
+        })
+    }
     // stateFullComponent
     // contoh function update state
     // addToCart = ()=>{
@@ -37,8 +43,11 @@ class Product extends Component{
                     carouselImage2="https://images.tokopedia.net/img/cache/1208/NsjrJu/2022/12/17/e6cee2d4-db9d-4bcd-9bb1-7e3689230c27.jpg.webp?ect=4g"
                     />
                     <CardPartial/>
+                    {/* 
+                    /* button addToCart
                     <button className="btn btn-dark me-5" onClick={this.addToCart}>add cart</button>
-                    <button className="btn btn-dark" onClick={this.removeCart}>remove cart</button>
+                    <button className="btn btn-dark" onClick={this.removeCart}>remove cart</button> */}
+                <div className="row">
                  <CardContent 
                 title="title 1" 
                 dataImg="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" 
@@ -57,6 +66,19 @@ class Product extends Component{
                 desc="deserunt voluptatibus beatae voluptas distinctio, quo nisi eius maiores fugit dignissimos quas recusandae. Consectetur!"
                 price="400"
                 />  
+                <CardContent 
+                title="title 3" 
+                dataImg="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKH4iA4wP-Q6VKAAQm8SOrTAVQmvp70g0clZbu3uPuEjh_Fh7cdWzhamCD6zd8l8EDI8&usqp=CAU" 
+                desc="deserunt voluptatibus beatae voluptas distinctio, quo nisi eius maiores fugit dignissimos quas recusandae. Consectetur!"
+                price="400"
+                />  
+                <CardContent 
+                title="title 3" 
+                dataImg="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKH4iA4wP-Q6VKAAQm8SOrTAVQmvp70g0clZbu3uPuEjh_Fh7cdWzhamCD6zd8l8EDI8&usqp=CAU" 
+                desc="deserunt voluptatibus beatae voluptas distinctio"
+                price="400"
+                />  
+                </div>
                 </section>
             </Fragment>
         );
