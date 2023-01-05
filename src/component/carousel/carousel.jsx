@@ -21,12 +21,10 @@ const carouselComponent = (props)=>{
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"><i className="bi-chevron-left"></i></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"><i className="bi-chevron-right"></i></span>
             </button>
                 {/* <div className="position-absolute top-100 start-50 translate-middle">
                   <div className="card w-100">
