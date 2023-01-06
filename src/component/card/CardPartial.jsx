@@ -1,5 +1,6 @@
 import React from "react";
 import './CardPartial.css';
+import Category from "./Category";
 
 const CardPartial = (props)=>{
 return(
@@ -153,6 +154,7 @@ return(
             <div className="col">
             <div className="card-title h3">{props.cardTitle2}</div>
             </div>
+            <Category/>
         </div>
     </div>
 );
