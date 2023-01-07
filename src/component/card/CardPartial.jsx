@@ -4,7 +4,7 @@ import Category from "./Category";
 
 const CardPartial = (props)=>{
 return(
-    <div className="card m-0 mt-4">
+    <div className="card border border-0 shadow m-0 mt-4">
         <div className="row">
             <div className="col" >
                 <div className="card-title h3">{props.cardTitle1}</div>
