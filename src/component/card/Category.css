@@ -14,10 +14,11 @@
 
 .item-category {
     border: 0.3px solid rgb(90, 204, 121);
-    padding: 5px;
-    border-radius: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
     color: rgb(152, 152, 152);
     min-width: fit-content;
     font-size: 15px;
     margin: 0 3px;
+    justify-content: space-between;
 }
