@@ -39,3 +39,13 @@
     border-radius: 50%;
     font-size: 20px;
 }
+
+.under-list {
+    border-bottom: 1.5px solid rgb(213, 213, 213);
+}
+
+.list-group-item.active {
+    color: rgb(32, 149, 28);
+    font-weight: 800;
+    border-bottom: 1px solid rgb(32, 149, 28);
+}
