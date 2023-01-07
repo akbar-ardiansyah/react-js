@@ -5,12 +5,17 @@ import './navbar.css';
 const navbar = (props) => {
     return(
     <div className="fixed-top">
-        <div className="container-fluid bg-body-secondary">
-            <div className="ps-4 pt-1 pb-1 fs-6 fw-light">
-                <small>
+        <div className="container-fluid bg-body-secondary pt-1 pb-1">
+            <span className="ps-4 fw-light text-start fs-small">
                 <i className="bi-phone"></i> Download Tokopedia App
-                </small>
-            </div>
+            </span>
+            <span className="float-end fw-light pe-4">
+                <a href="#" className="text-decoration-none pe-3 text-black fs-small">Tentang Tokopedia</a> 
+                <a href="#" className="text-decoration-none pe-3 text-black fs-small">Mitra Tokopedia</a> 
+                <a href="#" className="text-decoration-none pe-3 text-black fs-small">Mulai Berjualan</a>
+                <a href="#" className="text-decoration-none pe-3 text-black fs-small">Promo</a>
+                <a href="#" className="text-decoration-none pe-3 text-black fs-small">Tokopedia Care</a>
+            </span>
         </div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
