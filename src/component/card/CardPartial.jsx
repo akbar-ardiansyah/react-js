@@ -15,7 +15,7 @@ return(
                                         <li>
                                             <a href="#">
                                                 <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <img src="https://source.unsplash.com/random/100x100?shirt" className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5 className="card-title">Card title</h5>
                                                     </div>
@@ -25,7 +25,7 @@ return(
                                         <li>
                                             <a href="#">
                                                 <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <img src="https://source.unsplash.com/random/100x100?cap" className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5 className="card-title">Card title</h5>
                                                     </div>
@@ -35,7 +35,7 @@ return(
                                         <li>
                                             <a href="#">
                                                 <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <img src="https://source.unsplash.com/random/100x100?sunglas" className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5 className="card-title">Card title</h5>
                                                     </div>
@@ -45,51 +45,7 @@ return(
                                         <li>
                                             <a href="#">
                                                 <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
-                                                    <div className="card-body">
-                                                        <h5 className="card-title">Card title</h5>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                        </li>
-                                </ul>
-                            </div>
-                            <div className="carousel-item">
-                                <ul className="d-flex  p-0">
-                                        <li>
-                                            <a href="#">
-                                                <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
-                                                    <div className="card-body">
-                                                        <h5 className="card-title">Card title</h5>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
-                                                    <div className="card-body">
-                                                        <h5 className="card-title">Card title</h5>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
-                                                    <div className="card-body">
-                                                        <h5 className="card-title">Card title</h5>
-                                                    </div>
-                                                </div>
-                                                </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <img src="https://source.unsplash.com/random/100x100?iwatch" className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5 className="card-title">Card title</h5>
                                                     </div>
@@ -103,7 +59,7 @@ return(
                                         <li>
                                             <a href="#">
                                                 <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <img src="https://source.unsplash.com/random/100x100?phone" className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5 className="card-title">Card title</h5>
                                                     </div>
@@ -113,7 +69,7 @@ return(
                                         <li>
                                             <a href="#">
                                                 <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <img src="https://source.unsplash.com/random/100x100?airpod" className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5 className="card-title">Card title</h5>
                                                     </div>
@@ -123,7 +79,7 @@ return(
                                         <li>
                                             <a href="#">
                                                 <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <img src="https://source.unsplash.com/random/100x100?shirt-png" className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5 className="card-title">Card title</h5>
                                                     </div>
@@ -133,7 +89,51 @@ return(
                                         <li>
                                             <a href="#">
                                                 <div className="card">
-                                                    <img src="https://static.vecteezy.com/packs/media/vectors/term-bg-1-666de2d9.jpg" className="card-img-top" alt="..."/>
+                                                    <img src="https://source.unsplash.com/random/100x100?shirt-png" className="card-img-top" alt="..."/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">Card title</h5>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div className="carousel-item">
+                                <ul className="d-flex  p-0">
+                                        <li>
+                                            <a href="#">
+                                                <div className="card">
+                                                    <img src="https://source.unsplash.com/random/100x100?louis-viutton" className="card-img-top" alt="..."/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">Card title</h5>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div className="card">
+                                                    <img src="https://source.unsplash.com/random/100x100?gucci" className="card-img-top" alt="..."/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">Card title</h5>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div className="card">
+                                                    <img src="https://source.unsplash.com/random/100x100?uni-clo" className="card-img-top" alt="..."/>
+                                                    <div className="card-body">
+                                                        <h5 className="card-title">Card title</h5>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div className="card">
+                                                    <img src="https://source.unsplash.com/random/100x100?shirt-png" className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5 className="card-title">Card title</h5>
                                                     </div>
@@ -153,6 +153,15 @@ return(
             </div>
             <div className="col">
             <div className="card-title h3">{props.cardTitle2}</div>
+                <div className="card shadow-sm">
+                    <ul className="d-flex under-list">
+                        <li className="list-group-item d-flex justify-content-center ms-3 me-3 active">Pulsa</li>
+                        <li className="list-group-item d-flex justify-content-center ms-3 me-3">Pulsa</li>
+                        <li className="list-group-item d-flex justify-content-center ms-3 me-3">Pulsa</li>
+                        <li className="list-group-item d-flex justify-content-center ms-3 me-3">Pulsa</li>
+                        <li className="list-group-item d-flex justify-content-center ms-3 me-3">Pulsa</li>
+                    </ul>
+                </div>
             </div>
             <Category/>
         </div>
