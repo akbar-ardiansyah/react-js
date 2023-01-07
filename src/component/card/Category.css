@@ -2,10 +2,6 @@
     overflow-x: scroll;
     width: 100%;
 
-    -webkit-scrollbar {
-        display: none !important;
-    }
-
 }
 
 .scroll-x::-webkit-scrollbar {
