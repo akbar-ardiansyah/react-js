@@ -36,3 +36,7 @@ button {
     top: 0;
     color: #ffffff;
 }
+
+.fs-small {
+    font-size: 13px;
+}
