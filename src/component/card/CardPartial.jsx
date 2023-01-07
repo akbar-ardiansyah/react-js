@@ -2,11 +2,20 @@ import React from "react";
 import './CardPartial.css';
 import Category from "./Category";
 
+const items = [
+    'item 1', 
+    'item 2', 
+    'item 3',
+    'item 4',
+    'item 5',
+    'item 6',
+    'item 7',
+]
 const CardPartial = (props)=>{
 return(
     <div className="card border border-0 shadow m-0 mt-4">
         <div className="row">
-            <div className="col" >
+            <div className="col">
                 <div className="card-title h3">{props.cardTitle1}</div>
                     <div id="carouselExample" className="carousel slide">
                         <div className="carousel-inner">
@@ -161,6 +170,21 @@ return(
                         <li className="list-group-item d-flex justify-content-center ms-3 me-3">Pulsa</li>
                         <li className="list-group-item d-flex justify-content-center ms-3 me-3">Pulsa</li>
                     </ul>
+                    <div class="input-group row">
+                        <div className="col">
+                            <label>Nomor telepon</label>
+                            <input type="text" aria-label="First name" class="form-control" placeholder="081234567890"/>
+                        </div>
+                        <div className="col">
+                            <label>Nominal</label>
+                            <select name="" id="" class="form-select form-control">
+                                <option selected disabled></option>
+                                {items.map(item => (
+                                    <option value={item}>{item}</option>
+                                ))}
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Category/>
