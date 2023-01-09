@@ -36,7 +36,7 @@ class Product extends Component{
                 order={this.state.orders}
                 logo="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg"
                 />
-                <section className="container mt-6">
+                <section className="container mt-6 ps-5 pe-5">
                 <Carousel 
                     carouselImages="https://images.tokopedia.net/img/home/defaultbanner/59e9ecd0-b91b-40d4-aef8-b1057be0_auto_x2.jpg?ect=4g"
                     carouselImage1="https://images.tokopedia.net/img/NsjrJu/2020/9/25/ea701ee6-f36b-473d-b429-4d2a1da0713d.jpg?ect=4g"

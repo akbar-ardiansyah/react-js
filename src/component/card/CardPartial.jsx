@@ -13,7 +13,7 @@ const items = [
 ]
 const CardPartial = (props)=>{
 return(
-    <div className="card border border-0 shadow m-0 mt-4">
+    <div className="card border border-0 shadow m-0 mt-4 mb-4">
         <div className="row">
             <div className="col">
                 <div className="card-title h3">{props.cardTitle1}</div>
@@ -172,11 +172,11 @@ return(
                     </ul>
                     <div class="input-group row">
                         <div className="col">
-                            <label>Nomor telepon</label>
+                            <small>Nomor telepon</small>
                             <input type="text" aria-label="First name" class="form-control" placeholder="081234567890"/>
                         </div>
                         <div className="col">
-                            <label>Nominal</label>
+                            <small>Nominal</small>
                             <select name="" id="" class="form-select form-control">
                                 <option selected disabled></option>
                                 {items.map(item => (

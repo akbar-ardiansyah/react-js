@@ -4,7 +4,7 @@ import './navbar.css';
 
 const navbar = (props) => {
     return(
-    <div className="fixed-top">
+    <div className="fixed-top shadow-sm">
         <div className="container-fluid bg-body-secondary pt-1 pb-1">
             <span className="ps-4 fw-light text-start fs-small">
                 <i className="bi-phone"></i> Download Tokopedia App
