@@ -24,10 +24,12 @@ class LifeCycleComp extends Component {
         // }, 5000);
     }
     shouldComponentUpdate(nextProps,nextState){ //shouldComponentUpdate digunakan untuk mengecek apakah state atau props berubah
+        // shouldComponentUpdate dapat melakukan pada nextstate
         console.group('shouldComponentUpdate');
         // console.log("nextProps: ",nextProps)
         console.log("nextState: ",nextState)
         console.groupEnd();
+
         if(nextState.count >= 4){
             // document.writeln('so many click this button')
             // this.setState({
