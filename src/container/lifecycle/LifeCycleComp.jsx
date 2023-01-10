@@ -4,9 +4,9 @@ import './LifeCycleComp.css';
 
 class LifeCycleComp extends Component {
     constructor(props){ //constructor digunakan untuk menginisialisasi state
-        super(props);
+        super(props); //karena LifeCycleComp extend dari Component maka harus mendifine super(props)
         this.state={
-            count:1
+            count: 1
         }
         console.log('constructor');
         // this.handleCounterChange=this.handleCounterChange.bind(this);
@@ -17,15 +17,26 @@ class LifeCycleComp extends Component {
     }
     componentDidMount(){ //componentDidMount digunakan untuk mengakses DOM
         console.log('componentDidMount');
-        setTimeout(() => {
-            this.setState({
-                count:2
-            });
-        }, 5000);
+        // setTimeout(() => {
+        //     this.setState({
+        //         count:'I will disapear'
+        //     });
+        // }, 5000);
     }
     shouldComponentUpdate(nextProps,nextState){ //shouldComponentUpdate digunakan untuk mengecek apakah state atau props berubah
-        console.log('shouldComponentUpdate');
-        return true;
+        console.group('shouldComponentUpdate');
+        // console.log("nextProps: ",nextProps)
+        console.log("nextState: ",nextState)
+        console.groupEnd();
+        if(nextState.count >= 4){
+            // document.writeln('so many click this button')
+            // this.setState({
+            //     count:"so many click this button"
+            // })
+            return false
+        }
+        return true
+        
     }
     getSnapshotBeforeUpdate(prevProps,prevState){ //getSnapshotBeforeUpdate digunakan untuk mengambil data sebelum update
         console.log('getSnapshotBeforeUpdate');
@@ -38,10 +49,20 @@ class LifeCycleComp extends Component {
         console.log('componentWillUnmount');
     }
 
+    counter = ()=>{
+        this.setState({
+            count: this.state.count +1
+        })
+    }
     render(){
         console.log('render');
     return(
-        <button className='btn-dark'>test button {this.state.count}</button>
+        <div>
+            <h1 className='text-center'>
+                {this.state.count}
+            </h1>
+            <button className='btn-dark' onClick={this.counter}>this.button</button>
+        </div>
     );
 }
 }

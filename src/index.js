@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import Home from './container/main/Home';
 import Main from './container/main/main';
-import reportWebVitals from './reportWebVitals';
+// import LifeCycleComp from './container/lifecycle/LifeCycleComp';
+// import reportWebVitals from './reportWebVitals';
 
 
 // disini adalah tempat dimana komponen yang telah kita buat di render
@@ -23,8 +25,9 @@ class stateFullComponent extends React.Component {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Main />
-    {/* <stateFullComponent /> */}
+    {/* <Main /> */}
+    {/* <LifeCycleComp /> */}
+    <Home />
   </React.StrictMode>
 );
 
