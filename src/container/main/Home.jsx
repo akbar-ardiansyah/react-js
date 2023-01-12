@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import LifeCycleComp from "../lifecycle/LifeCycleComp";
+import Post from "../post/Post"
 
 class Home extends Component{
     state={
@@ -18,15 +19,16 @@ class Home extends Component{
         return(
             <div>
                 <div className="container">
-                    <div className="position-absolute top-50 start-50 translate-middle">
-                {
-                    // short-hand  react
-                    this.state.showComponent 
-                    ? 
-                    <LifeCycleComp/> 
-                    : null
-                }
-                </div>   
+                    {/* <div className="position-absolute top-50 start-50 translate-middle">
+                        {
+                            // short-hand  react
+                            this.state.showComponent 
+                            ? 
+                            <LifeCycleComp/> 
+                            : null
+                        }
+                    </div>    */}
+                    <Post/>
                 </div>
             </div>
         )
