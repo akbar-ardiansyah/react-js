@@ -1,5 +1,0 @@
-{
-  "githubPullRequests.ignoredPullRequestBranches": ["main"],
-
-  "git.allowForcePush": true
-}
