@@ -1,3 +1,9 @@
+.blockpost-anchor {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 300;
+}
+
 .blog-post {
     padding: 10px 0;
 }
