@@ -19,8 +19,9 @@ class Post extends Component {
         //         })
         //     })
         // parse mengunakan AXIOS sama halnya dengan contho di atas
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('http://localhost:3004/posts')
             .then((result) => {
+                console.log(result.data);
                 this.setState({
                     blockPost: result.data
                 })
@@ -36,7 +37,8 @@ class Post extends Component {
                         return (
                             // cotoh pemanggilan data berbentuk object pada map
                             <a href="#" className="blockpost-anchor">
-                                <BlockPost key={blockpost.id} title={blockpost.title} excerpt={blockpost.body.length < 80 ? blockpost.body.substring(0, 200) : blockpost.body.substring(0, 200) + " ..."} authors="Rahmad" />
+                                <BlockPost key={blockpost.id} title={blockpost.title} excerpt={blockpost.body} authors={blockpost.authors} />
+                                {/* <BlockPost key={blockpost.id} title={blockpost.title} excerpt={blockpost.body.length < 80 ? blockpost.body.substring(0, 200) : blockpost.body.substring(0, 200) + " ..."} authors="Rahmad" /> */}
                             </a>
                         )
                     })
