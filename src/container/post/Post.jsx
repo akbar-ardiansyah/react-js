@@ -48,6 +48,28 @@ class Post extends Component {
                     <div>
                         <h1>Implementasi Api Method  Get, Post, Update, Delete dan Put</h1>
                     </div>
+                    <div className="card">
+                        <div className="card-header">
+                            form input
+                        </div>
+                        <div className="card-body">
+                            <form action="">
+
+                                <div className="col6">
+                                    <div className="form-groub mb-3">
+                                        <input type="text" className="form-control" placeholder="input author" />
+                                    </div>
+                                    <div className="form-groub mb-3">
+                                        <input type="text" className="form-control" placeholder="input title" />
+                                    </div>
+                                    <div className="form-groub mb-3">
+                                        <input type="text" className="form-control" placeholder="input body" />
+                                    </div>
+                                </div>
+                                <button type="submit">submit</button>
+                            </form>
+                        </div>
+                    </div>
                     <table className="table table-striped">
                         <thead>
                             <tr>
