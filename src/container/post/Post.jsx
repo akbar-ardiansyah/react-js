@@ -8,7 +8,14 @@ import axios from "axios";
 class Post extends Component {
     state = {
         // looping data dari jason
-        blockPost: []
+        blockPost: [],
+        formPost: {
+            id: 1,
+            userId: 1,
+            title: "",
+            body: "",
+
+        }
     }
     getPostAPi = () => {
         // parse mengunakan AXIOS sama halnya dengan contho di atas
@@ -41,6 +48,10 @@ class Post extends Component {
         this.getPostAPi()
 
     }
+
+    onChangeInput = (event) => {
+        console.log(event.target.value);
+    }
     render() {
         return (
             <Fragment>
@@ -48,26 +59,21 @@ class Post extends Component {
                     <div>
                         <h1>Implementasi Api Method  Get, Post, Update, Delete dan Put</h1>
                     </div>
-                    <div className="card">
-                        <div className="card-header">
-                            form input
-                        </div>
-                        <div className="card-body">
-                            <form action="">
-
-                                <div className="col6">
-                                    <div className="form-groub mb-3">
-                                        <input type="text" className="form-control" placeholder="input author" />
-                                    </div>
-                                    <div className="form-groub mb-3">
-                                        <input type="text" className="form-control" placeholder="input title" />
-                                    </div>
-                                    <div className="form-groub mb-3">
-                                        <input type="text" className="form-control" placeholder="input body" />
-                                    </div>
+                    <div className="col-5">
+                        <div className="card">
+                            <div className="card-body">
+                                FORM INPUT
+                            </div>
+                            <div className="card-body">
+                                <div className="mb-3">
+                                    <label className="form-label">Email address</label>
+                                    <input name="title" type="text" className="form-control" placeholder="input title" onChange={this.onChangeInput} />
                                 </div>
-                                <button type="submit">submit</button>
-                            </form>
+                                <div className="mb-3">
+                                    <label className="form-label">Example textarea</label>
+                                    <textarea className="form-control" rows="3" name="body" onChange={this.onChangeInput}></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <table className="table table-striped">
@@ -88,6 +94,7 @@ class Post extends Component {
                                             // mempersingkat props, kita dapat membungkusnya di dalam "data={blockPost}" 
                                             // "data={blockPost}" adalah state yang di hasilkan dari map
                                             // dan menambahkan "data" pada props pengirim, contoh pada file "table.jsx" pada baris ke 7 hingga 9
+                                            key={blockPost.id}
                                             data={blockPost}
                                             // number={blockPost.id}
                                             // title={blockPost.title.length > 10 ? blockPost.title.substring(0, 10) + "..." : blockPost.title.substring(0, 10) + "..."}
