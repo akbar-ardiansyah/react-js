@@ -54,9 +54,9 @@ class Post extends Component {
     // maka dari itu  kita perlu memanggil fungsi ini pada inputan yang  di pilih
     // dan mencoba dengan cara di melihat  pada consol  terlebih dahulu
     onChangeInput = (event) => {
-        console.log(event.target.name);
+        // meduplikasi atau membuat state baru selanjutnya di masukkan kedalam state lama yang akan di kirimkan
         let newFormPost = { ...this.state.formPost };
-        this.newFormPost[event.target.name] = event.target.value;
+        newFormPost[event.target.name] = event.target.value
         this.setState({
             formPost: newFormPost
         }, () => {
