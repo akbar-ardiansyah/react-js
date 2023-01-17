@@ -19,7 +19,7 @@ class Post extends Component {
     }
     getPostAPi = () => {
         // parse mengunakan AXIOS sama halnya dengan contho di atas
-        axios.get('http://localhost:3004/posts')
+        axios.get('http://localhost:3004/posts?_sort=id&_order=desc')
             .then((result) => {
                 // console.log(result.data);
                 this.setState({
@@ -28,6 +28,7 @@ class Post extends Component {
             })
         // kelebihan axios memiliki   kelebihan  yaitu dia menyimpat token di headers
     }
+    // fungsi hapus data
     hapusData = (data) => {
         axios.delete(`http://localhost:3004/posts/${data}`).then((response) => {
             // alert(response.data)
@@ -36,6 +37,7 @@ class Post extends Component {
         })
 
     }
+    // pemasanagan komponent
     componentDidMount() {
         // parse dengan metode fetch, data dari API dan mengembalikan JSON ke dalam state BlockPost 
         // fetch('https://jsonplaceholder.typicode.com/posts')
@@ -56,12 +58,25 @@ class Post extends Component {
     onChangeInput = (event) => {
         // meduplikasi atau membuat state baru selanjutnya di masukkan kedalam state lama yang akan di kirimkan
         let newFormPost = { ...this.state.formPost };
+        let ids = new Date().getTime();
+        newFormPost['id'] = ids;
         newFormPost[event.target.name] = event.target.value
         this.setState({
             formPost: newFormPost
-        }, () => {
-            console.log(this.state.formPost)
         })
+    }
+    // tombol submit
+    submitButton = () => {
+        // mengirim data melalui axios dengan method post di dalamnya termasuk dua parameter
+        // parameter pertama adalah url seperti coontoh di bawah
+        // dan yang ke dua mengirim state
+        axios.post('http://localhost:3004/posts', this.state.formPost).then((res) => {
+            console.log(res);
+            this.getPostAPi();
+        }, (err) => {
+            console.log(err)
+        })
+        console.log(this.state.formPost)
     }
     render() {
         return (
@@ -82,7 +97,10 @@ class Post extends Component {
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Example textarea</label>
-                                    <textarea className="form-control" rows="3" name="body" onChange={this.onChangeInput}></textarea>
+                                    <textarea className="form-control" rows="5" name="body" onChange={this.onChangeInput}></textarea>
+                                </div>
+                                <div className="mb-3">
+                                    <button onClick={this.submitButton} type="submit">submit</button>
                                 </div>
                             </div>
                         </div>
