@@ -25,6 +25,8 @@ class Post extends Component {
                 this.setState({
                     blockPost: result.data
                 })
+            }, (err) => {
+                document.getElementById('root').innerHTML = `<h1 style="text-align:center; padding:30px 0;">SERVER UNAVAILABLE!</h1><hr><h3 style="text-align:center; padding:30px 0;">${err}</h3>`;
             })
         // kelebihan axios memiliki   kelebihan  yaitu dia menyimpat token di headers
     }
@@ -97,7 +99,7 @@ class Post extends Component {
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Example textarea</label>
-                                    <textarea className="form-control" rows="5" name="body" onChange={this.onChangeInput}></textarea>
+                                    <textarea className="form-control" rows="10" name="body" onChange={this.onChangeInput}></textarea>
                                 </div>
                                 <div className="mb-3">
                                     <button onClick={this.submitButton} type="submit">submit</button>
