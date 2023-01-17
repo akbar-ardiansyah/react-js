@@ -49,8 +49,19 @@ class Post extends Component {
 
     }
 
+    // insert data
+    // pada saat fungsi ini di jalankan pastikan form / inputan terhubung 
+    // maka dari itu  kita perlu memanggil fungsi ini pada inputan yang  di pilih
+    // dan mencoba dengan cara di melihat  pada consol  terlebih dahulu
     onChangeInput = (event) => {
-        console.log(event.target.value);
+        console.log(event.target.name);
+        let newFormPost = { ...this.state.formPost };
+        this.newFormPost[event.target.name] = event.target.value;
+        this.setState({
+            formPost: newFormPost
+        }, () => {
+            console.log(this.state.formPost)
+        })
     }
     render() {
         return (
