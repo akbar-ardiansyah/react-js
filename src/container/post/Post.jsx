@@ -53,12 +53,10 @@ class Post extends Component {
     }
     // fungsi update data
     updateData = (data) => {
-        // console.log(data)
-        axios.put(`http://localhost:3004/posts/${data}`, this.state.formPost).then((res) => {
-            console.log(res.config.url)
-            // alert("STATUS :" + response.statusText + " data berhasil dihapus!")
-            this.getPostAPi()
-        })
+        console.log(data)
+        // axios.put(`http://localhost:3004/posts/${data}`, this.state.formPost).then((res) => {
+        //     // this.getPostAPi()
+        // })
     }
     // pemasanagan komponent
     componentDidMount() {
