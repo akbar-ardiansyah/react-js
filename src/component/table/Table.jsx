@@ -8,7 +8,7 @@ const tables = (props) => {
             <td>{props.data.title}</td>
             <td>{props.data.body}</td>
             <td>
-                <button type="button" className="badge text-bg-primary">Update</button>
+                <button type="button" className="badge text-bg-primary" onClick={() => props.update(props.data.id)}>Update</button>
                 <button type="button" className="badge text-bg-danger" onClick={() => props.hapus(props.data.id)}>Delete</button>
             </td>
         </tr>
