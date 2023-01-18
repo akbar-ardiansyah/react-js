@@ -17,6 +17,18 @@ class Post extends Component {
 
         }
     }
+
+
+    // parse dengan metode fetch, data dari API dan mengembalikan JSON ke dalam state BlockPost
+    // fetchData = () => {
+    //     fetch('https://jsonplaceholder.typicode.com/posts')
+    //         .then(response => response.json())
+    //         .then(json => {
+    //             this.setState({
+    //                 blockPost: json
+    //             })
+    //         })
+    // }
     getPostAPi = () => {
         // parse mengunakan AXIOS sama halnya dengan contho di atas
         axios.get('http://localhost:3004/posts?_sort=id&_order=desc')
@@ -39,18 +51,18 @@ class Post extends Component {
         })
 
     }
+    // fungsi update data
+    updateData = (data) => {
+        // console.log(data)
+        axios.put(`http://localhost:3004/posts/${data}`, this.state.formPost).then((res) => {
+            console.log(res.config.url)
+            // alert("STATUS :" + response.statusText + " data berhasil dihapus!")
+            this.getPostAPi()
+        })
+    }
     // pemasanagan komponent
     componentDidMount() {
-        // parse dengan metode fetch, data dari API dan mengembalikan JSON ke dalam state BlockPost 
-        // fetch('https://jsonplaceholder.typicode.com/posts')
-        //     .then(response => response.json())
-        //     .then(json => {
-        //         this.setState({
-        //             blockPost: json
-        //         })
-        //     })
         this.getPostAPi()
-
     }
 
     // insert data
@@ -125,13 +137,14 @@ class Post extends Component {
                                             // mempersingkat props, kita dapat membungkusnya di dalam "data={blockPost}" 
                                             // "data={blockPost}" adalah state yang di hasilkan dari map
                                             // dan menambahkan "data" pada props pengirim, contoh pada file "table.jsx" pada baris ke 7 hingga 9
-                                            key={blockPost.id}
+                                            key={blockPost.id.toString()}
                                             data={blockPost}
                                             // number={blockPost.id}
                                             // title={blockPost.title.length > 10 ? blockPost.title.substring(0, 10) + "..." : blockPost.title.substring(0, 10) + "..."}
                                             // excerpt={blockPost.body.length < 80 ? blockPost.body.substring(0, 30) + " ..." : blockPost.body.substring(0, 30) + " ..."}
                                             // authors={blockPost.authors}
-                                            hapus={this.hapusData} />
+                                            hapus={this.hapusData}
+                                            update={this.updateData} />
                                     )
                                 })
                             }
@@ -147,7 +160,7 @@ class Post extends Component {
                         return (
                             // cotoh pemanggilan data berbentuk object pada map
                             <a href="#" className="blockpost-anchor">
-                                <BlockPost key={blockpost.id} title={blockpost.title} excerpt={blockpost.body} authors={blockpost.authors} />
+                                <BlockPost key={blockpost.id.toString()} title={blockpost.title} excerpt={blockpost.body} authors={blockpost.authors} />
                                 {/* <BlockPost key={blockpost.id} title={blockpost.title} excerpt={blockpost.body.length < 80 ? blockpost.body.substring(0, 200) : blockpost.body.substring(0, 200) + " ..."} authors="Rahmad" /> */}
                             </a>
                         )
