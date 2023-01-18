@@ -25,9 +25,8 @@ class stateFullComponent extends React.Component {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Main /> */}
-    {/* <LifeCycleComp /> */}
     <Home />
+    {/* <Main /> */}
   </React.StrictMode>
 );
 
