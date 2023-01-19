@@ -18,8 +18,13 @@ class Post extends Component {
         isUpdate: false
     }
 
-
+    // =================================================================================
+    //  CRUD PADA REACT
+    // =================================================================================
     // parse dengan metode fetch, data dari API dan mengembalikan JSON ke dalam state BlockPost
+
+    // BEGIN READ DATA
+
     // fetchData = () => {
     //     fetch('https://jsonplaceholder.typicode.com/posts')
     //         .then(response => response.json())
@@ -29,6 +34,7 @@ class Post extends Component {
     //             })
     //         })
     // }
+
     getPostAPi = () => {
         // parse mengunakan AXIOS sama halnya dengan contho di atas
         axios.get('http://localhost:3004/posts?_sort=id&_order=desc')
@@ -42,6 +48,9 @@ class Post extends Component {
             })
         // kelebihan axios memiliki   kelebihan  yaitu dia menyimpat token di headers
     }
+    // END READ DATA
+
+
     // fungsi hapus data
     hapusData = (data) => {
         axios.delete(`http://localhost:3004/posts/${data}`).then((response) => {
@@ -66,12 +75,20 @@ class Post extends Component {
         })
 
     }
+
+
+
     // pemasanagan komponent
+    // saat pertama kali di jalankan fungsi inilah yang pertama bekerja
     componentDidMount() {
         this.getPostAPi()
     }
 
-    // insert data
+
+
+    // onChangeInput() akan menghandle setiap pengiriman props
+
+
     // pada saat fungsi ini di jalankan pastikan form / inputan terhubung 
     // maka dari itu  kita perlu memanggil fungsi ini pada inputan yang  di pilih
     // dan mencoba dengan cara di melihat  pada consol  terlebih dahulu
@@ -87,6 +104,8 @@ class Post extends Component {
             formPost: newFormPost
         })
     }
+
+
     // tombol submit
     submitButton = () => {
         if (this.state.isUpdate) {
@@ -95,6 +114,8 @@ class Post extends Component {
             this.insertData()
         }
     }
+
+
     // insert data
     insertData = () => {
         // mengirim data melalui axios dengan method post di dalamnya termasuk dua parameter
@@ -108,6 +129,8 @@ class Post extends Component {
         })
         console.log(this.state.formPost)
     }
+
+    // RETURN PAGE
     render() {
         return (
             <Fragment>
