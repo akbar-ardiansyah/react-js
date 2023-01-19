@@ -14,8 +14,8 @@ class Post extends Component {
             userId: 1,
             title: "",
             body: "",
-
-        }
+        },
+        isUpdate: false
     }
 
 
@@ -53,10 +53,18 @@ class Post extends Component {
     }
     // fungsi update data
     updateData = (data) => {
-        console.log(data)
-        // axios.put(`http://localhost:3004/posts/${data}`, this.state.formPost).then((res) => {
-        //     // this.getPostAPi()
-        // })
+        console.log(data);
+        this.setState({
+            formPost: data,
+            isUpdate: true
+        })
+    }
+    insertDataToApi = () => {
+        axios.put(`http://localhost:3004/posts/${this.state.formPost.id}`, this.state.formPost).then(res => {
+            console.log(res)
+            this.getPostAPi()
+        })
+
     }
     // pemasanagan komponent
     componentDidMount() {
@@ -71,7 +79,9 @@ class Post extends Component {
         // meduplikasi atau membuat state baru selanjutnya di masukkan kedalam state lama yang akan di kirimkan
         let newFormPost = { ...this.state.formPost };
         let ids = new Date().getTime();
-        newFormPost['id'] = ids;
+        if (!this.state.isUpdate) {
+            newFormPost['id'] = ids;
+        }
         newFormPost[event.target.name] = event.target.value
         this.setState({
             formPost: newFormPost
@@ -79,6 +89,14 @@ class Post extends Component {
     }
     // tombol submit
     submitButton = () => {
+        if (this.state.isUpdate) {
+            this.insertDataToApi()
+        } else {
+            this.insertData()
+        }
+    }
+    // insert data
+    insertData = () => {
         // mengirim data melalui axios dengan method post di dalamnya termasuk dua parameter
         // parameter pertama adalah url seperti coontoh di bawah
         // dan yang ke dua mengirim state
@@ -105,11 +123,11 @@ class Post extends Component {
                             <div className="card-body">
                                 <div className="mb-3">
                                     <label className="form-label">Email address</label>
-                                    <input name="title" type="text" className="form-control" placeholder="input title" onChange={this.onChangeInput} />
+                                    <input name="title" value={this.state.formPost.title} type="text" className="form-control" placeholder="input title" onChange={this.onChangeInput} />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Example textarea</label>
-                                    <textarea className="form-control" rows="10" name="body" onChange={this.onChangeInput}></textarea>
+                                    <textarea value={this.state.formPost.body} className="form-control" rows="10" name="body" onChange={this.onChangeInput}></textarea>
                                 </div>
                                 <div className="mb-3">
                                     <button onClick={this.submitButton} type="submit">submit</button>
