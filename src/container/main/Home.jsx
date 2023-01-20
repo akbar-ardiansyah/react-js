@@ -1,6 +1,9 @@
-import React, { Component } from "react";
-import LifeCycleComp from "../lifecycle/LifeCycleComp";
+import React, { Component, Fragment } from "react";
 import Post from "../post/Post"
+import Product from "../product/Product";
+import LifeCycleComp from "../lifecycle/LifeCycleComp";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+// import LifeCycleComp from "../lifecycle/LifeCycleComp";
 
 class Home extends Component {
     state = {
@@ -17,20 +20,13 @@ class Home extends Component {
     }
     render() {
         return (
-            <div>
-                <div className="container">
-                    {/* <div className="position-absolute top-50 start-50 translate-middle">
-                        {
-                            // short-hand  react
-                            this.state.showComponent 
-                            ? 
-                            <LifeCycleComp/> 
-                            : null
-                        }
-                    </div>    */}
-                    <Post />
-                </div>
-            </div>
+            <BrowserRouter>
+                <Fragment>
+                    <Route path="/" component={Post} />
+                    <Route path="/product" component={Product} />
+                    <Route path="/LifeCycleComp" component={LifeCycleComp} />
+                </Fragment>
+            </BrowserRouter>
         )
     }
 
