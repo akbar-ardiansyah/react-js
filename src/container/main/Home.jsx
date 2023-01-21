@@ -1,8 +1,17 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, lazy } from "react";
 import Post from "../post/Post"
 import Product from "../product/Product";
 import LifeCycleComp from "../lifecycle/LifeCycleComp";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+// import {
+//     createBrowserRouter,
+//     RouterProvider,
+//     Route,
+//     Link,
+// } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// const Post = lazy(() => import('../product/Product'))
+// import { Routes, Route } from 'react-router-dom'
 // import LifeCycleComp from "../lifecycle/LifeCycleComp";
 
 class Home extends Component {
@@ -20,13 +29,13 @@ class Home extends Component {
     }
     render() {
         return (
-            <BrowserRouter>
-                <Fragment>
-                    <Route path="/" component={Post} />
+            <Router>
+                <Routes>
+                    <Route path="/" component={LifeCycleComp} />
                     <Route path="/product" component={Product} />
                     <Route path="/LifeCycleComp" component={LifeCycleComp} />
-                </Fragment>
-            </BrowserRouter>
+                </Routes>
+            </Router>
         )
     }
 
