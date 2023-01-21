@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import Home from './container/main/Home';
+import Kos from './container/kos/Home'
 import Main from './container/main/main';
 // import LifeCycleComp from './container/lifecycle/LifeCycleComp';
 // import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
+
 
 
 // disini adalah tempat dimana komponen yang telah kita buat di render
@@ -25,10 +28,23 @@ class stateFullComponent extends React.Component {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
-    {/* <Main /> */}
+    {/* <Home /> */}
+    <Kos />
   </React.StrictMode>
 );
+
+// penggunaan route pada file index
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path='/' element={<Home />} />
+//         <Route path='/main' element={<Main />} />
+//       </Routes>
+//     </BrowserRouter>
+//   </React.StrictMode>
+// );
 
 
 // If you want to start measuring performance in your app, pass a function
