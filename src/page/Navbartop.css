@@ -1,0 +1,28 @@
+/* .navbar-top {
+    width: 100%;
+    padding: 15px;
+}
+
+.navbar-top-list {
+    position: absolute;
+    right: 40px;
+    list-style-type: none;
+    align-items: center;
+    display: inline-flex;
+    text-align: center;
+    z-index: 10;
+}
+
+.navbar-link {
+    margin: 0 10px;
+} */
+
+.nav-link svg {
+    width: 22px;
+    height: 22px;
+}
+
+.nav-link svg:hover {
+    fill: #111 !important;
+    transition: all 0.2s ease-in;
+}
