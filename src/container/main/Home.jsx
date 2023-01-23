@@ -2,7 +2,13 @@ import React, { Component, Fragment, lazy } from "react";
 import Post from "../post/Post"
 import Product from "../product/Product";
 import LifeCycleComp from "../lifecycle/LifeCycleComp";
-import { BrowserRouter, Router, Route, Routes } from 'react-router-dom';
+import {
+    BrowserRouter,
+    Route,
+    Link,
+    Routes
+} from 'react-router-dom';
+
 
 // const Post = lazy(() => import('../post/Post'));
 class Home extends Component {
@@ -20,11 +26,29 @@ class Home extends Component {
     }
     render() {
         return (
-            <Routes>
-                <Route path='/' element={Product} />
-                <Route path='/post' element={Post} />
-            </Routes>
+            <BrowserRouter>
+                <div className="container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/product">product</Link>
+                            </li>
+                            <li>
+                                <Link to="/lifecycle">lifecycle</Link>
+                            </li>
+                        </ul>
+                    </nav>
 
+                </div>
+                <Routes>
+                    <Route path="/" Component={Post} />
+                    <Route path="/product" Component={Product} />
+                    <Route path="/lifecycle" Component={<LifeCycleComp />} />
+                </Routes>
+            </BrowserRouter >
         )
     }
 
