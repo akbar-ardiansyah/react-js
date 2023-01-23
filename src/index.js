@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import Home from './container/main/Home';
-import Kos from './container/kos/Home'
-import Main from './container/main/main';
+// import Home from './container/main/Home';
+import Routed from './container/main/Route';
+// import Routest from './container/main/Routest';
+// import Kos from './container/kos/Home'
+// import Main from './container/main/main';
 // import LifeCycleComp from './container/lifecycle/LifeCycleComp';
 // import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 
 
 
@@ -15,11 +17,11 @@ import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 // berikut adalah contoh koponen default yang telah di buat sejak pertama kali di create projects
 
 // ini adalah contoh  stafullcomponent
-const stateLessComponent = () => {
+const StateLessComponent = () => {
   return <h1>Hello World</h1>
 }
 // dan ini contooh stateFullComponent
-class stateFullComponent extends React.Component {
+class StateFullComponent extends React.Component {
   render() {
     return <p>Hello world!</p>
   }
@@ -28,8 +30,12 @@ class stateFullComponent extends React.Component {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* <Main /> */}
+    <Routed />
     {/* <Home /> */}
-    <Kos />
+    {/* <StateLessComponent />
+    <StateFullComponent /> */}
+    {/* <Kos /> */}
   </React.StrictMode>
 );
 
