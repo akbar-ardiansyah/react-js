@@ -2,7 +2,7 @@ import React from "react";
 import './Sidebar.css'
 const sideBar = () => {
     return (
-        <nav>
+        <nav className="side-bar">
             <ul>
                 <li>
                     <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
