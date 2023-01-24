@@ -44,9 +44,9 @@ class Home extends Component {
 
                 </div>
                 <Routes>
-                    <Route path="/" Component={Post} />
-                    <Route path="/product" Component={Product} />
-                    <Route path="/lifecycle" Component={<LifeCycleComp />} />
+                    <Route path="/" element={Post} />
+                    <Route path="/product" element={Product} />
+                    <Route path="/lifecycle" element={<LifeCycleComp />} />
                 </Routes>
             </BrowserRouter >
         )
