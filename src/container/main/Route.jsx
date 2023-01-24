@@ -12,6 +12,7 @@ import Home from "../../component/route/Home"
 import About from "../../component/route/About"
 import Pricing from "../../component/route/Pricing"
 import Post from "../post/Post"
+import Videos from "../../component/route/Video"
 
 const Routed = () => {
     return (
@@ -47,6 +48,11 @@ const Routed = () => {
                                         <Link to="/post" className="text-decoration-none text-info">Post</Link>
                                     </div>
                                 </li>
+                                <li className="nav-item">
+                                    <div className="nav-link">
+                                        <Link to="/video" className="text-decoration-none text-info">Video</Link>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -59,6 +65,8 @@ const Routed = () => {
                         <Route path="/about" element={<About />} ></Route>
                         <Route path="/pricing" element={<Pricing />} ></Route>
                         <Route path="/post" element={<Post />} ></Route>
+                        <Route path="/video" element={<Videos />} ></Route>
+
                     </Routes>
                 </div>
             </Fragment >
