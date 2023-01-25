@@ -1,8 +1,20 @@
-body {
-    background: rgb(46, 46, 47);
-    color: aqua;
+:root {
+    --text-primary: #61dafb;
+    --bg-dark: #282C34;
 }
 
+section.hero-section {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    padding: 10em 0;
+    min-height: 100vh;
+}
+
+section.ryon-section {
+    background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
@@ -18,4 +30,8 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+.text-primary {
+    color: var(--text-primary) !important;
 }

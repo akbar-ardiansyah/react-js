@@ -3,14 +3,10 @@ import React, { Component } from "react";
 class Home extends Component {
     render() {
         return (
-            <div className="card  bg-dark p-3">
-                <div className="card-title">
-                    Home
-                </div>
-                <div className="card-body">
-                    <h1>ini adalah halaman Home</h1>
-                </div>
-            </div>
+            <section className="hero-section ryon-section">
+                <h1 className="text-center align-ite">Belajar React</h1>
+                <h1 className="fw-lighter text-center text-white">Pustaka JavaScript untuk membangun antarmuka pengguna</h1>
+            </section>
         )
     }
 }

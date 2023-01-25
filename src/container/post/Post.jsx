@@ -134,7 +134,7 @@ class Post extends Component {
     render() {
         return (
             <Fragment>
-                <div className="mt-5 mb-5">
+                <div className="container mt-5 mb-5">
                     <div>
                         <h1>Implementasi Api Method  Get, Post, Update, Delete dan Put</h1>
                     </div>

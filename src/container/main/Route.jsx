@@ -22,6 +22,7 @@ const Routed = () => {
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/">
                             <img src={logo} className="App-logo" width="50px" alt="logo" />
+                            <span className="fs-2 text-primary align-middle fw-bolder">Belajar React</span>
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -30,7 +31,7 @@ const Routed = () => {
                             <ul className="navbar-nav">
                                 <li className="nav-item">
                                     <div className="nav-link">
-                                        <Link to="/" className="text-decoration-none text-info">Home</Link>
+                                        <Link to="/" className="text-decoration-none text-info">Beranda</Link>
                                     </div>
                                 </li>
                                 <li className="nav-item">
@@ -57,9 +58,7 @@ const Routed = () => {
                         </div>
                     </div>
                 </nav>
-                <div className="container">
-                    <h1 className="text-center">MENGGUNAKAN ROUTE</h1>
-                    <hr />
+                <section>
                     <Routes>
                         <Route path="/" element={<Home />}></Route>
                         <Route path="/about" element={<About />} ></Route>
@@ -68,7 +67,7 @@ const Routed = () => {
                         <Route path="/video" element={<Videos />} ></Route>
 
                     </Routes>
-                </div>
+                </section>
             </Fragment >
         </BrowserRouter>
     )
