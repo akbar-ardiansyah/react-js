@@ -18,7 +18,7 @@ const Routed = () => {
     return (
         <BrowserRouter>
             <Fragment>
-                <nav className="navbar navbar-expand-lg bg-dark">
+                <nav className="navbar navbar-expand-lg bg-dark fixed-top">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/">
                             <img src={logo} className="App-logo" width="50px" alt="logo" />
@@ -65,7 +65,6 @@ const Routed = () => {
                         <Route path="/pricing" element={<Pricing />} ></Route>
                         <Route path="/post" element={<Post />} ></Route>
                         <Route path="/video" element={<Videos />} ></Route>
-
                     </Routes>
                 </section>
             </Fragment >
