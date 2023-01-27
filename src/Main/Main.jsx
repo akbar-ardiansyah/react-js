@@ -15,7 +15,7 @@ import logo from '../logo.svg';
 import Home from "../page/Home";
 import Blog from "../page/Blog";
 import Pricing from "../page/Pricing";
-// import Post from "../post/Post"
+import Post from "../component/blockpost/Post";
 // import Videos from "../../component/route/Video"
 
 const Routed = () => {
@@ -67,8 +67,8 @@ const Routed = () => {
                         <Route path="/" element={<Home />}></Route>
                         <Route path="/blog" element={<Blog />} ></Route>
                         <Route path="/pricing" element={<Pricing />} ></Route>
-                        {/* <Route path="/post" element={<Post />} ></Route>
-                        <Route path="/video" element={<Videos />} ></Route> */}
+                        <Route path="/post/:id" element={<Post />} ></Route>
+                        {/*  <Route path="/video" element={<Videos />} ></Route> */}
                     </Routes>
                 </section>
             </Fragment >
