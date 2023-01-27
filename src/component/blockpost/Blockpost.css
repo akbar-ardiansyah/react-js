@@ -1,0 +1,8 @@
+.block-post {
+    margin-top: 3em;
+}
+
+.post-img img {
+    border-radius: 10px;
+    max-height: 500px;
+}

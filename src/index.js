@@ -1,12 +1,9 @@
+// libraries
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-import Home from './container/main/Home';
-import Routed from './container/main/Route';
-import Main from './container/main/main';
-// import LifeCycleComp from './container/lifecycle/LifeCycleComp';
-// import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
+// pages
+import Main from './Main/Main';
 
 
 
@@ -28,12 +25,7 @@ class StateFullComponent extends React.Component {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Main /> */}
-    <Routed />
-    {/* <Home /> */}
-    {/* <StateLessComponent />
-    <StateFullComponent /> */}
-    {/* <Kos /> */}
+    <Main />
   </React.StrictMode>
 );
 
