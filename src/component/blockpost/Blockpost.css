@@ -4,5 +4,7 @@
 
 .post-img img {
     border-radius: 10px;
-    max-height: 500px;
+    min-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
 }

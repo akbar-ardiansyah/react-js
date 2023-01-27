@@ -4,8 +4,8 @@ const BlockPost = (props) => {
     return (
         <div className="block-post">
             <div className="row">
-                <div className="col-8">
-                    <h2>{props.title}</h2>
+                <div className="col-8 mx-auto">
+                    <h2 onClick={() => props.detailPost(props.data.id)}>{props.title}</h2>
                     <p>{props.excerpt}</p>
                     <small>
                         Post By <a href="#">{props.author}</a>
